@@ -18,7 +18,7 @@ log.txt
 npm-debug.log*
 
 /.idea
-/.ionic
+/fotosGramApp/.ionic
 /fotosGramApp/.sass-cache
 /fotosGramApp/.sourcemaps
 /fotosGramApp/.versions
@@ -29,3 +29,8 @@ npm-debug.log*
 /fotosGramApp/platforms
 /fotosGramApp/plugins
 /fotosGramApp/www
+
+
+/server-node/node_modules
+
+
