@@ -1,4 +1,4 @@
-# BACKEND NODEJOS
+# BACKEND NODE JS
 
 Este proyecto esta desarrollado con nodejs, base de datos mongodb. el codigo se desarrollo con typescript, y se creo una carpeta dist. se tenian dos terminales, una con el comando tsc -w para que cada cambio que ocurriera en los archivos ts, creara su equivalente a js, en una carpeta dist, que le indicamos en el tsconfig.json
 
@@ -38,5 +38,3 @@ tambien se tenia otra terminal con el comando nodemon /dist/ para que ejecutara 
 9. creamos la carpeta clases, en ella creamos un archivo llamado server.ts
 
 10. debemos instalar npm i --save-dev @types/express para poder importar express en nuestro proyecto. -save-dev es para dependencias de desarrollo, las cuales al hacer paso a produccion no subiran
-
-11. 
