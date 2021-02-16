@@ -33,6 +33,8 @@ tambien se tenia otra terminal con el comando nodemon /dist/ para que ejecutara 
 
     > npm i --save-dev @types/uniqid
 
+    > npm i --save-dev @types/cors
+
 8. debemos tener dos consolas abiertas, en una *tsc-w* y en la otra *nodemon .\dist\ *
 
 9. creamos la carpeta clases, en ella creamos un archivo llamado server.ts

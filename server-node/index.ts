@@ -1,5 +1,8 @@
 import Server from "./clases/server";
 import mongoose = require("mongoose");
+// importar para el manejo de cors
+import cors  from 'cors';
+
 import bodyParser  from 'body-parser';
 // lo siguiente es para subir archivos a mi servidor
 import fileUpload  from 'express-fileupload';
@@ -18,6 +21,9 @@ server.app.use(bodyParser.json() );
 // fileUpload es para que nos agregue a nuestro request el file donde recibe los archivos que envie el fontend
 server.app.use(fileUpload());
 
+
+// configuracion del cors para que permita peticiones desde otros servidores o puertos
+server.app.use(cors({origin:true,credentials:true}));
 
 // Rutas de mi aplicacion
 server.app.use('/user', userRoutes);
