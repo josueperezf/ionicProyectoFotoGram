@@ -1,9 +1,27 @@
+# FONTEND
+ consume la api de node js y utiliza:, 
+
+1. camera: para tomar las fotos o selecionar una del telefono
+
+2. File Transfer <https://ionicframework.com/docs/native/file-transfer> para que informe si ya termino de realizar la subida de la foto al backend
+
+3. 
+
 # BACKEND NODE JS
 
 Este proyecto esta desarrollado con nodejs, base de datos mongodb. el codigo se desarrollo con typescript, y se creo una carpeta dist. se tenian dos terminales, una con el comando tsc -w para que cada cambio que ocurriera en los archivos ts, creara su equivalente a js, en una carpeta dist, que le indicamos en el tsconfig.json
 
 tambien se tenia otra terminal con el comando nodemon /dist/ para que ejecutara nuestra carpeta javascript y vieramos los cambios en tiempo real
 
+- si quiero correr mi proyecto, solamente puedo ejecutar en la carpeta de server-node
+
+    > node ./dist/
+
+- si quiero hacer cambios en el proyecto debo:
+
+    > tsc -w => esto es para que cada cambio en archivos typescript los combierta en .js
+
+    > nodemon ./dist/ es para que cuando se generen cambios en ese archivo js, producto del tsc -w, los compile de una vez
 ## NOTAS
 
 1. Si tenemos una interfaz con 'x atributos', per un caso necesitamos la misma interfaz pero con mas atributos, podemos unar lo siguiente: const Usuario:Usuario & { otraPropiedad: string }
